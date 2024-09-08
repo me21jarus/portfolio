@@ -72,3 +72,12 @@ body {
   background-color: black;
   color: white; 
 }
+/* Add any additional styling as needed */
+html, body {
+  overflow-x: hidden;
+}
+
+div.relative.flex {
+  padding-left: 5%; /* Adjust the spacing to match your design */
+  padding-right: 5%;
+}
