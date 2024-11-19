@@ -15,8 +15,8 @@ const Home = () => {
             I'm a Software Engineer based in Bengaluru, and I'm very passionate and dedicated to my work.
           </p>
           <div className="flex justify-center md:justify-start space-x-4">
-            <button className="bg-green-500 text-white py-2 px-6 rounded-full font-semibold">Hire Me</button>
-            <button className="bg-transparent border border-white text-white py-2 px-6 rounded-full font-semibold">See My Work</button>
+            <a href="#contact" className="bg-green-500 text-white py-2 px-6 rounded-full font-semibold">Hire Me</a>
+            <a href="#projects" className="bg-transparent border border-white text-white py-2 px-6 rounded-full font-semibold">See My Work</a>
           </div>
         </div>
         <div className="relative md:w-1/2 flex justify-center">
@@ -29,4 +29,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Home;

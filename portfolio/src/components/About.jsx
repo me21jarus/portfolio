@@ -25,7 +25,7 @@ const About = () => {
             <span className="ml-10"><span className="text-white">*</span>Supervised and Unsupervised</span>
         </div>
         <div className="flex justify-center mt-8">
-          <a href="/resume.pdf" download className="bg-green-500 text-white py-4 px-6 rounded-full font-semibold hover:bg-green-600">Download Resume</a>
+          <a href="/Surajresume.pdf" download className="bg-green-500 text-white py-4 px-6 rounded-full font-semibold hover:bg-green-600">Download Resume</a>
         </div>
       </div>
     </div>
