@@ -42,14 +42,13 @@ const cardData = [
     imageUrl: "/ttt.png",
     link: "https://me21jarus.github.io/Tic-Tac-Toe-Game/",
   },
-  
 ];
 
 export function MultiCardDemo() {
   return (
-    <div className="grid grid-cols-3 justify-evenly ">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       {cardData.map((card, index) => (
-        <div className="w-80" key={index}>
+        <div className="w-full sm:w-80 mx-auto" key={index}>
           <CardContainer>
             <CardBody className="bg-violet-800 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-6 border">
               <CardItem className="text-xl font-bold text-black dark:text-white">
@@ -64,10 +63,10 @@ export function MultiCardDemo() {
                   height="300"
                   width="300"
                   className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-                  alt="thumbnail"
+                  alt={card.title}
                 />
               </CardItem>
-              <div className="flex justify-center items-center">
+              <div className="flex justify-center items-center mt-4">
                 <CardItem
                   as={Link}
                   href={card.link}
@@ -75,7 +74,6 @@ export function MultiCardDemo() {
                   className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
                 >
                   View →
-                
                 </CardItem>
               </div>
             </CardBody>
